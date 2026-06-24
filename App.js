@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import Logo from './src/components/Logo';
+import Form from './src/components/Form';
 
 export default function App() {
+  const onSubmit = () =>{
+
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView  style={styles.container}>
+      <Logo/>
+      <Form onSubmit={onSubmit}/>
+    </SafeAreaView>
   );
 }
 
