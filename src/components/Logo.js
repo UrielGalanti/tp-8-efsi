@@ -1,3 +1,5 @@
+import { Image } from "react-native"
+
 const Logo = () =>{
     return (
         <>

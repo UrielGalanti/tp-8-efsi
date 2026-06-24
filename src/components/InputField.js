@@ -1,6 +1,12 @@
-const InputField = (text, isHidden) =>{
+import { TextInput } from "react-native"
+
+const InputField = ({text, isHidden, onChangeText}) =>{
     return (
         <>
+            <TextInput 
+                onChangeText={onChangeText}
+                placeholder={text}
+            />
         </>
     )
 }
