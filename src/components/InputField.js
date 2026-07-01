@@ -6,6 +6,7 @@ const InputField = ({text, isHidden, onChangeText}) =>{
             <TextInput 
                 onChangeText={onChangeText}
                 placeholder={text}
+                secureTextEntry={isHidden}
             />
         </>
     )

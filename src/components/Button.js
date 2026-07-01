@@ -1,9 +1,12 @@
-const Button = ({text, onPress}) =>{
-    return (
-        <Button
-            title={text}
-            onPress={onPress}
-        />
-    )
-}
-export default Button
+import { Button as RNButton } from "react-native";
+
+const Button = ({ text, onPress }) => {
+  return (
+    <RNButton
+      title={text}
+      onPress={onPress}
+    />
+  );
+};
+
+export default Button;
