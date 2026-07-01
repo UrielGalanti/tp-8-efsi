@@ -10,7 +10,7 @@ const Form = ({onSubmit, onForget, onRegister}) =>{
         <>
             <InputField text="Email" onChangeText={setEmail}/>
             <InputField text="Contraseña" onChangeText={setPassword} isHidden={true}/>
-            <Button text="Ingresar" onPress={onSubmit}/>
+            <Button text="Ingresar" onPress={() => onSubmit(email, password)} disabled={!email || !password}/>
             <TextButton text="Olvidaste la clave?" onPress={onForget}/>
             <TextButton text="Crear Cuenta" onPress={onRegister}/>
         </>
