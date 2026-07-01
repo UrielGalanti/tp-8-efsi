@@ -7,7 +7,6 @@ const InputField = ({ text, isHidden, onChangeText }) => {
       onChangeText={onChangeText}
       placeholder={text}
       secureTextEntry={isHidden}
-      placeholderTextColor="#777"
     />
   );
 };
@@ -17,7 +16,7 @@ const styles = StyleSheet.create({
     width: "85%",
     height: 50,
     borderWidth: 1,
-    borderColor: "#7C4DFF", 
+    borderColor: "#b2082d", 
     borderRadius: 4,
     paddingHorizontal: 12,
     marginBottom: 10,
